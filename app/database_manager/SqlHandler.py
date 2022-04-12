@@ -127,6 +127,17 @@ class SqlHandler:
         query = "INSERT INTO BMI_DATA (GENDER,CATEGORY,WEIGHT,HEIGHT,BMI,HEALTHRISK) VALUES (?,?,?,?,?,?)"
         self.connection.execute(query,params)
 
+    def getAllData(self):
+        '''
+        Fetch all the patient data
+        :return:
+        '''
+
+        query = "SELECT * FROM BMI_DATA"
+        cursor = self.connection.execute(query)
+        return cursor.fetchall()
+
+
     def getOverweightCount(self):
         '''
         This method returns the overweight count

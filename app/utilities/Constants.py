@@ -18,4 +18,4 @@ VERY_HIGH_RISK = "Very high risk"
 DB_NAME = "/database_manager/bmi_database.db"
 DB_TEST_NAME = "/database_manager/test_bmi_database.db"
 
-PATIENT_DATA_IN_JSON = "/assets/patient_data.json"
+PATIENT_DATA_FILE = "/assets/patient_data.json"

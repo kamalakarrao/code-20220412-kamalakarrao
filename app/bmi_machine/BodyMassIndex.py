@@ -1,13 +1,15 @@
 from app.utilities import Constants
 class BodyMassIndex:
-    def __init__(self, weight, height):
+    def __init__(self, weight, height,gender):
         '''
-        Constructor for the BodyMassIndex class
+
         :param weight:
         :param height:
+        :param gender:
         '''
-        self.weight = weight
-        self.height = height
+        self.weight = float(weight)
+        self.height = float(height)
+        self.gender = gender
         self.bmi = self.weight / (self.height * self.height)
 
     def get_category(self):
